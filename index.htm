@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Modern</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ddimKJ1byrhBhA4iW"); 
+    </script>
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- DARK MODE -->
+    <div class="theme-toggle" id="themeToggle">☀️</div>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">windy Web</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>hello im <span class="highlight">windy</span></h1>
+            <p>Web Developer</p>
+            <button id="btnHire">Hubungi Saya</button>
+            <a class="download-cv" href="cv.pdf" download>Download CV</a>
+        </div>
+
+        <div class="hero-img" data-speed="3">
+            <img src="img/profil.png" alt="Foto Profil">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            hi im a programer 
+            i like create a web :>
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>Projek Terbaru</h2>
+
+        <div class="project-grid">
+
+            <a href="project1.html" class="project-card">
+                <img src="img/project1.jpg" alt="Project 1">
+                <h3>Project Satu</h3>
+                <p>Lihat detail project ini →</p>
+            </a>
+
+            <a href="project2.html" class="project-card">
+                <img src="img/project2.jpg" alt="Project 2">
+                <h3>Project Dua</h3>
+                <p>Lihat detail project ini →</p>
+            </a>
+
+            <a href="project3.html" class="project-card">
+                <img src="img/project3.jpg" alt="Project 3">
+                <h3>Project Tiga</h3>
+                <p>Lihat detail project ini →</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Kontak Saya</h2>
+
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
